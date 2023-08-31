@@ -1,4 +1,4 @@
-import { FC, Fragment } from "react";
+import { FC, Fragment, useState } from "react";
 import Box from "@component/Box";
 import Container from "@component/Container";
 import Navbar from "@component/navbar/Navbar";
@@ -11,9 +11,11 @@ type Props = { carouselData: MainCarouselItem[] };
 // ======================================================
 
 const Section1: FC<Props> = ({ carouselData }) => {
+  const [navCollapse, setNavCollapse] = useState(false);
+
   return (
     <Fragment>
-      <Navbar navListOpen={true} />
+      <Navbar navListOpen={navCollapse} />
 
       <Box bg="gray.white" mb="3.75rem">
         <Container pb="2rem">
