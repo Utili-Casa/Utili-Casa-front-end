@@ -23,7 +23,7 @@ interface Nav {
 
 type NavbarProps = {
   navListOpen: boolean;
-  
+
 };
 
 const Navbar: FC<NavbarProps> = ({ navListOpen }) => {
@@ -133,7 +133,7 @@ const Navbar: FC<NavbarProps> = ({ navListOpen }) => {
           <Button width="278px" height="40px" bg="body.default" variant="text">
             <Icon>categories</Icon>
             <Typography ml="10px" flex="1 1 0" fontWeight="600" textAlign="left" color="text.muted">
-              Categories
+              Categorias
             </Typography>
 
             <Icon className="dropdown-icon" variant="small">
